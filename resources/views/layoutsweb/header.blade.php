@@ -100,19 +100,21 @@
                 <div class="container-xl p-0">
                     <div class="row navcol p-3">
                         <div class="col-lg-3">
+                             <a href="{{ route('events.homepage') }}">
                             <img class="max-230" src="assets/images/cfhlogo1.png" alt="" width="400" 
                              height="70">
+                             </a>
                              <a  data-bs-toggle="collapse" data-bs-target="#menu" class="float-end d-lg-none ps-3"><i class="bi pt-1 fs-1 cp bi-list"></i></a>
                         </div>
                         <div id="menu" class="col-lg-9 text pe-0 d-none d-lg-block">
                             <ul class="fw-bold float-end nacul fs-8 text-uppercase">
                                 <li class="float-start act p-3 px-4"><a href="{{ route('events.homepage') }}" style="color:white;">Home</a></li>
-                                <li class="float-start p-3 px-4"><a href="#events" style="color:white;">News & Events</a></li>
-                                <li class="float-start p-3 px-4"><a href="#services" style="color:white;">Services</a></li>
-                                <li class="float-start p-3 px-4"><a href="#tithes" style="color:white;">Give</a></li>
+                                <li class="float-start p-3 px-4"><a href="{{ route('events.eventdetails') }}" style="color:white;">News & Events</a></li>
+                                <li class="float-start p-3 px-4"><a href="{{ route('events.service') }}" style="color:white;">Services</a></li>
+                                <li class="float-start p-3 px-4"><a href="{{ route('events.give') }}" style="color:white;">Give</a></li>
                                 <!-- <li class="float-start p-3 px-4"><a href="#blog">Gallery</a></li> -->
                                 <!-- <li class="float-start p-3 px-4"><a href="#testimonial">Testimonial</a></li> -->
-                                <li class="float-start p-3 px-4"><a href="#contact" style="color:white;">Contact Us</a></li>
+                                <li class="float-start p-3 px-4"><a href="{{ route('events.contactus') }}" style="color:white;">Contact Us</a></li>
                             </ul>
                         </div>
                     </div>

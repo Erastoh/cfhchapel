@@ -31,14 +31,14 @@
         <!-- small box -->
         <div class="small-box bg-purple">
             <div class="inner">
-                <h3>{{ $produk }}</h3>
+                <h3>{{ $events }}</h3>
 
                 <p>Services</p>
             </div>
             <div class="icon">
                 <i class="fa fa-cubes"></i>
             </div>
-            <a href="{{ route('produk.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('events.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -48,12 +48,12 @@
             <div class="inner">
                 <h3>{{ $member }}</h3>
 
-                <p>Member</p>
+                <p>Members</p>
             </div>
             <div class="icon">
                 <i class="fa fa-id-card"></i>
             </div>
-            <a href="{{ route('member.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('events.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -63,12 +63,12 @@
             <div class="inner">
                 <h3>{{ $supplier }}</h3>
 
-                <p>Contact Us</p>
+                <p>Appointments</p>
             </div>
             <div class="icon">
                 <i class="fa fa-truck"></i>
             </div>
-            <a href="{{ route('supplier.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('events.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -76,37 +76,6 @@
 <!-- /.row -->
 
 <div class="row">
-<div class="col-lg-4 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-green">
-            <div class="inner">
-                <h3>{{ $penjualan }}</h3>
-
-                <p>Sales</p>
-            </div>
-            <div class="icon">
-                <i class="fa fa-dollar"></i>
-            </div>
-            <a href="{{ route('penjualan.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-    </div>
-    <!-- ./col -->
-
-    <div class="col-lg-4 col-xs-6">
-        <!-- small box -->
-        <div class="small-box bg-red">
-            <div class="inner">
-                <h3>{{ $pengeluaran }}</h3>
-
-                <p>Give</p>
-            </div>
-            <div class="icon">
-                <i class="fa fa-dollar"></i>
-            </div>
-            <a href="{{ route('pengeluaran.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
-        </div>
-    </div>
-    <!-- ./col -->
     <!-- visit "codeastro" for more projects! -->
     <div class="col-lg-4 col-xs-6">
         <!-- small box -->
@@ -117,9 +86,9 @@
                 <p>News</p>
             </div>
             <div class="icon">
-                <i class="fa fa-dollar"></i>
+                <i class="fa fa-id-card"></i>
             </div>
-            <a href="{{ route('pembelian.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
+            <a href="{{ route('events.index') }}" class="small-box-footer">View <i class="fa fa-arrow-circle-right"></i></a>
         </div>
     </div>
     <!-- ./col -->
@@ -131,7 +100,7 @@
     <div class="col-lg-12">
         <div class="box">
             <div class="box-header with-border">
-                <h3 class="box-title">Income Chart {{ tanggal_indonesia($tanggal_awal, false) }} - {{ tanggal_indonesia($tanggal_akhir, false) }}</h3>
+                <h3 class="box-title">Appointment Chart {{ tanggal_indonesia($tanggal_awal, false) }} - {{ tanggal_indonesia($tanggal_akhir, false) }}</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">

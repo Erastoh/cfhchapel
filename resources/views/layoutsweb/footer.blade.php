@@ -85,7 +85,12 @@
                         </div>
                     </div>
                 </div>
+
+                <strong>&copy; {{ date('Y') }} <a href="https://rafutech.com/">Rafu Technology</a>.</strong> All rights
+           reserved.
+                
             </div>
+            
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

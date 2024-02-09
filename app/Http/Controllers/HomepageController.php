@@ -17,5 +17,21 @@ class HomepageController extends Controller
         return view('welcome');
     }
 
+        public function contactus()
+    {
+        return view('homepageweb.contactus');
+    }
+
+
+        public function give()
+    {
+        return view('homepageweb.give');
+    }
+
+            public function service()
+    {
+        return view('homepageweb.service');
+    }
+
 
 }

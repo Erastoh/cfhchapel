@@ -30,48 +30,47 @@
                 </a>
             </li>
             <li>
-                <a href="{{ route('produk.index') }}">
+                <a href="{{ route('events.index') }}">
                     <i class="fa fa-cubes"></i> <span>Services</span>
                 </a>
             </li>
             <li>
-                <a href="{{ route('member.index') }}">
+                <a href="{{ route('events.index') }}">
                     <i class="fa fa-id-card"></i> <span>Members</span>
                 </a>
             </li>
             <li>
-                <a href="{{ route('supplier.index') }}">
+                <a href="{{ route('events.index') }}">
                     <i class="fa fa-truck"></i> <span>News</span>
                 </a>
             </li>
            
             
-            <li class="header">REPORT</li>
+            <li class="header">Website HomePage</li>
             <li>
-                <a href="{{ route('laporan.index') }}">
-                    <i class="fa fa-file-pdf-o"></i> <span>Income</span>
+                <a href="{{ route('events.index') }}">
+                    <i class="fa fa-file-pdf-o"></i> <span>Images</span>
+                </a>
+            </li>
+             <li>
+                <a href="{{ route('events.index') }}">
+                    <i class="fa fa-file-pdf-o"></i> <span>Descriptions</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('events.index') }}">
+                    <i class="fa fa-file-pdf-o"></i> <span>Appointment</span>
                 </a>
             </li>
             <li class="header">SYSTEM</li>
             <li>
-                <a href="{{ route('user.index') }}">
-                    <i class="fa fa-users"></i> <span>User</span>
+                <a href="{{ route('events.index') }}">
+                    <i class="fa fa-users"></i> <span>Members</span>
                 </a>
             </li>
             <li>
                 <a href="{{ route("setting.index") }}">
                     <i class="fa fa-cogs"></i> <span>Settings</span>
-                </a>
-            </li>
-            @else
-            <li>
-                <a href="{{ route('transaksi.baru') }}">
-                    <i class="fa fa-cart-plus"></i> <span>New Transaction</span>
-                </a>
-            </li>
-            <li>
-                <a href="{{ route('transaksi.index') }}">
-                    <i class="fa fa-cart-arrow-down"></i> <span>Active Transaction</span>
                 </a>
             </li>
             @endif
