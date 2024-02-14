@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Events;
+use App\Models\appointments;
 
-class EventsController extends Controller
+class AppointmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class EventsController extends Controller
 
     public function data()
     {
-        $event = Events::orderBy('id_event', 'desc')->get();
+        $event = appointments::orderBy('id_event', 'desc')->get();
 
         return datatables()
             ->of($event)
@@ -62,7 +62,7 @@ class EventsController extends Controller
      */
     public function store(Request $request)
     {
-        $kategori = new Events();
+        $kategori = new appointments();
         $kategori->event_name = $request->event_name;
         $kategori->description = $request->description;
          if ($request->hasFile('image')) {
@@ -86,7 +86,7 @@ class EventsController extends Controller
      */
     public function show($id)
     {
-        $kategori = Events::find($id);
+        $kategori = appointments::find($id);
 
         return response()->json($kategori);
     }
@@ -111,7 +111,7 @@ class EventsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $kategori = Events::find($id);
+        $kategori = appointments::find($id);
         $kategori->event_name = $request->event_name;
         $kategori->description = $request->description;
         
@@ -137,7 +137,7 @@ class EventsController extends Controller
      */
     public function destroy($id)
     {
-        $kategori = Events::find($id);
+        $kategori = appointments::find($id);
         $kategori->delete();
 
         return response(null, 204);

@@ -61,7 +61,7 @@
         <!-- small box -->
         <div class="small-box bg-olive">
             <div class="inner">
-                <h3>{{ $supplier }}</h3>
+                <h3>{{ $appointments }}</h3>
 
                 <p>Appointments</p>
             </div>

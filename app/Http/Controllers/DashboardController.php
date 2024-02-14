@@ -9,6 +9,7 @@ use App\Models\Pengeluaran;
 use App\Models\Penjualan;
 use App\Models\Produk;
 use App\Models\Supplier;
+use App\Models\appointments;
 use Illuminate\Http\Request;
 
 class DashboardController extends Controller
@@ -19,6 +20,7 @@ class DashboardController extends Controller
         $produk = Produk::count();
         $supplier = Supplier::count();
         $member = Member::count();
+        $appointments=  appointments::count();
         $penjualan = Penjualan::sum('diterima');
         $pengeluaran = Pengeluaran::sum('nominal');
         $pembelian = Pembelian::sum('bayar');
@@ -42,7 +44,7 @@ class DashboardController extends Controller
         $tanggal_awal = date('Y-m-01');
 
         if (auth()->user()->level == 1) {
-            return view('admin.dashboard', compact('events', 'produk', 'supplier', 'member', 'penjualan', 'pengeluaran', 'pembelian', 'tanggal_awal', 'tanggal_akhir', 'data_tanggal', 'data_pendapatan'));
+            return view('admin.dashboard', compact('events', 'produk', 'supplier', 'member',  'appointments', 'penjualan', 'pengeluaran', 'pembelian', 'tanggal_awal', 'tanggal_akhir', 'data_tanggal', 'data_pendapatan'));
         } else {
             return view('kasir.dashboard');
         }

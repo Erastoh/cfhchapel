@@ -13,7 +13,7 @@
 <div class="row">
     <div class="col-lg-12">
         <div class="box">
-            <form action="{{ route('setting.update') }}" method="post" class="form-setting" data-toggle="validator" enctype="multipart/form-data">
+            <form action="{{ route('events.appointments') }}" method="post" class="form-setting" data-toggle="validator" enctype="multipart/form-data">
                 @csrf
                 <div class="box-body">
                     <div class="alert alert-info alert-dismissible" style="display: none;">

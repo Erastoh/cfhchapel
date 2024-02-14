@@ -42,6 +42,7 @@ Route::get('/homepage', [HomepageController::class, 'homepage'])->name('events.h
 Route::get('/contactus', [HomepageController::class, 'contactus'])->name('events.contactus');
 Route::get('/give', [HomepageController::class, 'give'])->name('events.give');
 Route::get('/service', [HomepageController::class, 'service'])->name('events.service');
+Route::post('/appointments', [HomepageController::class, 'appointments'])->name('events.appointments');
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
@@ -50,6 +51,8 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/events/data', [EventsController::class, 'data'])->name('events.data');
         Route::resource('/events', EventsController::class);
         Route::get('/eventsimage', [EventsController::class, 'index'])->name('events.index2');
+        Route::resource('/appointments', EventsController::class);
+        Route::get('/appointments', [EventsController::class, 'index'])->name('events.index2');
 
     });
 
